@@ -68,6 +68,7 @@
         </dependency>
 
     </dependencies>
+<build>    
 <plugin>
   <groupId>org.wildfly.plugins</groupId>
   <artifactId>wildfly-maven-plugin</artifactId>
@@ -89,4 +90,5 @@
     <filename>${filename}</filename>
   </configuration>
 </plugin>
+    </build>    
 </project>
