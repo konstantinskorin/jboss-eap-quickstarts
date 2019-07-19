@@ -142,5 +142,28 @@
     <build>
         <!-- Set the name of the WAR, used as the context root when the app is deployed -->
         <finalName>${project.artifactId}</finalName>
+<plugins>    
+<plugin>
+  <groupId>org.wildfly.plugins</groupId>
+  <artifactId>wildfly-maven-plugin</artifactId>
+  <version>1.1.0.Alpha10</version>
+  <executions>
+    <execution>
+      <phase>install</phase>
+      <goals>
+        <goal>redeploy</goal>
+      </goals>
+    </execution>
+  </executions>
+  <configuration>
+    <force>true</force>
+    <hostname>${hostname}</hostname>
+    <port>${port}</port>
+    <username>${username}</username>
+    <password>${password}</password>
+    <filename>${filename}</filename>
+  </configuration>
+</plugin>
+    </plugins>    
     </build>
 </project>
