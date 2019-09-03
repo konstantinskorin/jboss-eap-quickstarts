@@ -72,7 +72,7 @@
 <distributionManagement>
       <snapshotRepository>
         <id>nexus</id>
-        <url>http://skorin/nexus/repository/maven-snapshots/</url>
+        <url>http://skorin/nexus/repository/maven-releases/</url>
       </snapshotRepository>
 </distributionManagement>    
  
@@ -85,7 +85,7 @@
         <extensions>true</extensions>
         <configuration>
             <serverId>nexus</serverId>
-            <nexusUrl>http://skorin/nexus/repository/maven-snapshots/</nexusUrl>
+            <nexusUrl>http://skorin/nexus/repository/maven-releases/</nexusUrl>
         </configuration>
       </plugin>
     </plugins>    
