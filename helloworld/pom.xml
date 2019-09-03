@@ -29,6 +29,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>helloworld</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>Quickstart: helloworld</name>
     <description>Helloworld</description>
